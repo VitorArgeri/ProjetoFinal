@@ -1,0 +1,118 @@
+body {
+    width: 100%;
+    height: 3692px;
+    background: #586875;
+    margin: 0;
+}
+
+#Cabeçalho {
+    width: 100%;
+    height: 148px;
+    flex-shrink: 0;
+    background: #3D3D3D;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #3D3D3D;
+    border-bottom: 3px #C5C6C7 solid;
+}
+
+#Cabeçalho .ProjetoFinal {
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#Cabeçalho .ProjetoFinal img {
+    width: 75px;
+    height: 75px;
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+#Cabeçalho .ProjetoFinal h1 {
+    color: #66FCF1;
+    font-family: Judson;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px;
+}
+
+#Cabeçalho .Caminhos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left: 45%;
+}
+
+#Cabeçalho .Caminhos a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#Cabeçalho .Caminhos h1, h2, h3, h4 {
+    padding: 35px;
+    color: #66FCF1;
+    font-family: Judson;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#Carrinho {
+    margin-top: 104px;
+    margin-left: 104px;
+    display: flex;
+    align-items: center;
+    border-bottom: #C5C6C7;
+}
+#Carrinho img {
+    background: #C5C6C7;
+    border-radius: 636px;
+    width: 636px;
+    height: 636px;
+    flex-shrink: 0;
+}
+
+#Carrinho h1 {
+    margin-left: 104px;
+    color: #FFF;
+    font-family: Judson;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+#Especificações {
+    margin-top: 100px;
+}
+#Especificações .Bloco1{
+    width: 45.15%; 
+    height: 536px; 
+    background: #2D3E53; 
+    border-radius: 20px; 
+    border: 2px black solid;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 40px;
+    color: #FFF;
+}
+
+#Especificações .Bloco1 h1{
+    justify-content: center;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+}
+
+p{
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
