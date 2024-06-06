@@ -65,7 +65,7 @@ body {
 
 #Carrinho {
     margin-top: 104px;
-    margin-left: 104px;
+    margin-left: 300px;
     display: flex;
     align-items: center;
     border-bottom: #C5C6C7;
@@ -88,10 +88,26 @@ body {
     line-height: normal;
 }
 
+.Título {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.Título h1 {
+    color: #FFF;
+    font-size: 100px;
+    margin-bottom: 100px;
+}
 
 #Especificações {
     margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
 }
+
 #Especificações .Bloco1{
     width: 45.15%; 
     height: 536px; 
@@ -104,15 +120,98 @@ body {
     color: #FFF;
 }
 
-#Especificações .Bloco1 h1{
+#Especificações .Bloco1 h1, .Bloco2 h1, .Bloco3 h1{
     justify-content: center;
     font-weight: bold;
     font-size: 60px;
     text-align: center;
 }
 
-p{
-    word-wrap: break-word;
-    white-space: pre-wrap;
+#Especificações .Bloco2 {
+    width: 45.15%; 
+    height: 536px; 
+    background: #2D3E53; 
+    border-radius: 20px; 
+    border: 2px black solid;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 40px;
+    color: #FFF;
 }
+
+.Bloco3{
+    width: 45.15%; 
+    height: 536px; 
+    background: #2D3E53; 
+    border-radius: 20px; 
+    border: 2px black solid;
+    justify-content: center;
+    color: #FFF;
+    margin-top: 29px;
+    margin-left: 25%;
+}
+
+ul {
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+hr {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.Título2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.Título2 h1 {
+    color: #FFF;
+    font-size: 100px;
+    margin-bottom: 100px;
+}
+
+
+#Galeria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+}
+
+#Galeria img {
+    display: block;
+    margin: auto;
+    min-height: 500px;
+    max-height: 500px;
+    max-width: 800px;
+    min-width: 800px;
+    border-radius: 2%;
+    border: 3px solid #3D3D3D;
+}
+
+
+.Before {
+    background-color: transparent;
+    font-size: 100px;
+    border: none;
+    margin-left: 300px;
+}
+
+.After {
+    background-color: transparent;
+    font-size: 100px;
+    border: none;
+    margin-right: 300px;
+}
+
+
+
+
+
+
+
+
 

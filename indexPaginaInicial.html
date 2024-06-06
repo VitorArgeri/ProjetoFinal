@@ -15,50 +15,64 @@
         <div class="Caminhos">
             <h1><a href="indexPaginaInicial.html">Início</a></h1>
             <h2><a href="">Nossa Jornada</a></h2>
-            <h3><a href="">MNPV3</a></h3>
-            <h4><a href="">Contato</a></h4>
+            <h3><a href="indexContato.html">MNPV3</a></h3>
+            <h4><a href="indexContato.html">Contato</a></h4>
         </div>  
     </div>
     <div id="Carrinho">
-        <img src="" alt="">
+        <img src="Imagens/CarrinhoOficial.jpeg" alt="">
         <h1>DeLorean</h1>
-    </div>><hr/>
+    </div>
+    <hr/>
+    <div class="Título">
+        <h1>Especificações</h1>
+    </div>
     <div id="Especificações">
         <div class="Bloco1">
             <h1>Componentes</h1>
-            <p> Arduino Uno ou microcontrolador similar
-                Módulo Bluetooth (HC-05 ou HC-06)
-                Driver do motor (L298N ou similar)
-                2 motores DC com caixa de velocidades 48:1
-                Duas rodas adicionais
-                Bateria AA
-                Compartimento de pilhas AA e um conjunto de pilhas alcalinas AA
-                Cabo USB para conectar a placa ao IDE
-                Chassi com rodas e espaço para montagem de eletrônicos</p>
+            <ul>
+                <li>Arduino Uno ou microcontrolador similar</li>
+                <li>Módulo Bluetooth (HC-05 ou HC-06)</li>
+                <li>Driver do motor (L298N ou similar)</li>
+                <li>2 motores DC com caixa de velocidades 48:1</li>
+                <li>Duas rodas adicionais</li>
+                <li>Bateria AA</li>
+                <li>Compartimento de pilhas AA e um conjunto de pilhas alcalinas AA</li>
+                <li>Cabo USB para conectar a placa ao IDE</li>
+                <li>Chassi com rodas e espaço para montagem de eletrônicos</li>
+            </ul>
         </div>
         <div class="Bloco2">
             <h1>Processo</h1>
-            <p>Fabricação do Chassi
-                Inserir os componentes na sua estrutura
-                Estilização
-                Teste
-            </p>
+            <ul>
+                <li>Fabricação do Chassi</li>
+                <li>Inserir os componentes na sua estrutura</li>
+                <li>Estilização</li>
+                <li>Teste</li>
+            </ul>
         </div>
-        <div class="Bloco3">
-            <h1>Objetivos</h1>
-            <p>Prática com IoT
-                Domínio com lógica de programação
-                Colaboração em equipe
-                Superação de desafios Estímulo de criatividade
-                Construção de um carrinho com base em arduíno</p>
+    </div>
+    <div class="Bloco3">
+        <h1>Objetivos</h1>
+        <ul>
+            <li>Prática com IoT</li>
+            <li>Domínio com lógica de programação</li>
+            <li>Colaboração em equipe</li>
+            <li>Superação de desafios</li>
+            <li>Estímulo de criatividade</li>
+            <li>Construção de um carrinho com base em arduíno</li>
+        </ul>
         </div>
+        <hr/>
+    </div>
+    <div class="Título2">
+        <h1>Galeria</h1>
     </div>
     <div id="Galeria">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+        <button class="Before" onclick="changeImageBefore()"><</button>
+        <img src="Imagens/Carro.png" class="responsive" id="image" alt="">
+        <button class="After" onclick="changeImageAfter()">></button>
     </div>
+    <script src="jsPaginaInicial.js"></script>
 </body>
 </html>
