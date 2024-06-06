@@ -106,6 +106,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    position: static;
 }
 
 #Especificações .Bloco1{
@@ -147,8 +148,11 @@ body {
     border: 2px black solid;
     justify-content: center;
     color: #FFF;
-    margin-top: 29px;
-    margin-left: 25%;
+    display: block;
+    margin-left: auto;   
+    margin-bottom: auto;   
+    margin-right: auto;   
+    margin-top: 70px;   
 }
 
 ul {
