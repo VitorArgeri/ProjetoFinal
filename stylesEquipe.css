@@ -1,26 +1,20 @@
 body {
     width: 100%;
     height: 3692px;
-    background: #586875;
+    background: #d0cece;
     margin: 0;
-}
-
-body {
-    width: 100%;
-    height: 3692px;
-    background: #586875;
-    margin: 0;
+    margin-bottom: 100px;
 }
 
 #Cabeçalho {
     width: 100%;
     height: 148px;
     flex-shrink: 0;
-    background: #3D3D3D;
+    background: #181818;
     display: flex;
     align-items: center;
     width: 100%;
-    background: #3D3D3D;
+    background: #181818;
     border-bottom: 3px #C5C6C7 solid;
 }
 
@@ -38,7 +32,7 @@ body {
 }
 
 #Cabeçalho .ProjetoFinal h1 {
-    color: #66FCF1;
+    color: #ff2227;
     font-family: Judson;
     font-size: 30px;
     font-style: normal;
@@ -61,11 +55,383 @@ body {
 }
 
 #Cabeçalho .Caminhos h1, h2, h3, h4 {
-    padding: 35px;
-    color: #66FCF1;
+    padding: 35px;  
+    color: #ff2227;
     font-family: Judson;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    
+}
+
+.Título {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+    color: #d00d11;
+    font-family: Judson;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.QuemSomos {
+    color: #181818;
+    font-family: Judson;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 100px;
+    padding-bottom: 30px;
+}
+
+.BlocoEquipe {
+    border-radius: 25px;
+    border: 2px solid #000;
+    background: #d00d11;
+    width: 93%;
+    height: 732px;
+    flex-shrink: 0;
+    margin: auto;
+}
+
+.BlocoEquipe p {
+    width: 93%;
+    color: #181818;
+    font-family: Judson;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 50px;
+    white-space: pre-wrap;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background: #000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Integrantes ul {
+    font-weight: bold;
+}
+
+.Integrantes {
+    width: 319px;
+    height: 84px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Judson;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 100px;
+    padding-bottom: 30px;
+}
+
+.Miguel {
+    width: 93%;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background: #d00d11;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.Miguel img {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 250px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 45px;
+}
+
+.Miguel h1 {
+    width: 223px;
+    height: 39px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Judson;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -275px;
+    margin-left: 50%;
+}
+
+.Miguel ul {
+    width: 686px;
+    height: 137px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Judson;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 20%;
+}
+
+.Nicole {
+    width: 93%;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background: #d00d11;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.Nicole img {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 250px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 45px;
+}
+
+.Nicole h1 {
+    width: 223px;
+    height: 39px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Judson;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -275px;
+    margin-left: 50%;
+}
+
+.Nicole ul {
+    width: 686px;
+    height: 137px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Judson;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 20%;
+}
+
+.Pablo {
+    width: 93%;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background: #d00d11;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.Pablo img {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 250px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 45px;
+}
+
+.Pablo h1 {
+    width: 270px;
+    height: 39px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Judson;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -275px; /* Manter este valor igual */
+    margin-left: 50%; /* Manter este valor igual */
+}
+
+.Pablo ul {
+    width: 686px;
+    height: 137px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Judson;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 20%; 
+}
+
+.Rocha {
+    width: 93%;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background: #d00d11;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.Rocha img {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 250px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 45px;
+}
+
+.Rocha h1 {
+    width: 270px;
+    height: 39px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Judson;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -275px;
+    margin-left: 50%;
+}
+
+.Rocha ul {
+    width: 686px;
+    height: 137px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Judson;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 20%;
+}
+
+.Pereira {
+    width: 93%;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background: #d00d11;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.Pereira img {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 250px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 45px;
+}
+
+.Pereira h1 {
+    width: 290px;
+    height: 39px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Judson;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -275px;
+    margin-left: 50%;
+}
+
+.Pereira ul {
+    width: 686px;
+    height: 137px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Judson;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 20%;
+}
+
+.Argeri {
+    width: 93%;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 2px solid #000;
+    background: #d00d11;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.Argeri img {
+    width: 250px;
+    height: 250px;
+    flex-shrink: 0;
+    border-radius: 250px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 45px;
+}
+
+.Argeri h1 {
+    width: 250px;
+    height: 39px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Judson;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -275px; /* Manter este valor igual */
+    margin-left: 50%; /* Manter este valor igual */
+}
+
+.Argeri ul {
+    width: 686px;
+    height: 137px;
+    flex-shrink: 0;
+    color: #181818;
+    font-family: Judson;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 20%; /* Manter este valor igual */
 }
