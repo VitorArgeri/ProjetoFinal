@@ -5,13 +5,6 @@ body {
     margin: 0;
 }
 
-body {
-    width: 100%;
-    height: 3692px;
-    background: #d0cece;
-    margin: 0;
-}
-
 #Cabeçalho {
     width: 100%;
     height: 148px;
@@ -22,6 +15,9 @@ body {
     width: 100%;
     background: #181818;
     border-bottom: 3px #C5C6C7 solid;
+    position: fixed; 
+    top: 0; 
+    z-index: 1000; 
 }
 
 #Cabeçalho .ProjetoFinal {
@@ -38,7 +34,7 @@ body {
 }
 
 #Cabeçalho .ProjetoFinal h1 {
-    color: #ff2227;
+    color: rgb(171, 57, 171);
     font-family: Judson;
     font-size: 30px;
     font-style: normal;
@@ -62,7 +58,7 @@ body {
 
 #Cabeçalho .Caminhos h1, h2, h3, h4 {
     padding: 35px;
-    color: #ff2227;
+    color: rgb(171, 57, 171);
     font-family: Judson;
     font-size: 30px;
     font-style: normal;

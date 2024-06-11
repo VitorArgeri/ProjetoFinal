@@ -27,3 +27,4 @@ function updateImage() {
     var img = document.getElementById('image');
     img.src = images[currentImageIndex];
 }
+

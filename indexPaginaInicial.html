@@ -7,69 +7,87 @@
     <link rel="stylesheet" href="stylesPaginaInicial.css">
 </head>
 <body>
-    <div id="Cabeçalho">
+    <div id="bg">
+        <canvas></canvas>
+        <canvas></canvas>
+        <canvas></canvas>
+    </div>
+    <header id="Cabeçalho">
         <div class="ProjetoFinal">
-            <img src="Imagens/laptop-computer-with-blank-transparent-screen-and-background-format-png.webp" alt="">
+            <img src="Imagens/laptop-computer-with-blank-transparent-screen-and-background-format-png.webp" alt="Projeto Final">
             <h1>Projeto Final</h1>
         </div>
-        <div class="Caminhos">
+        <nav class="Caminhos">
             <h1><a href="indexPaginaInicial.html">Início</a></h1>
             <h2><a href="IndexNossaJornada.html">Nossa Jornada</a></h2>
             <h3><a href="IndexEquipe.html">MNPV3</a></h3>
             <h4><a href="indexContato.html">Contato</a></h4>
-        </div>  
-    </div>
-    <div id="Carrinho" class="Carrinho">
-        <img src="Imagens/CarrinhoOficial.jpeg" alt="">
+        </nav>  
+    </header>
+    <section id="Carrinho" class="Carrinho">
+        <img src="Imagens/CarrinhoOficial.jpeg" alt="De Lorean">
         <h1>De Lorean</h1>
-    </div>
-    <div class="Título">
-        <h1>Especificações</h1>
-    </div>
-    <div id="Especificações">
-        <div class="Bloco1">
-            <h1>Componentes</h1>
-            <ul>
-                <li>Arduino Uno ou microcontrolador similar</li>
-                <li>Módulo Bluetooth (HC-05 ou HC-06)</li>
-                <li>Driver do motor (L298N ou similar)</li>
-                <li>2 motores DC com caixa de velocidades 48:1</li>
-                <li>Duas rodas adicionais</li>
-                <li>Bateria AA</li>
-                <li>Compartimento de pilhas AA e um conjunto de pilhas alcalinas AA</li>
-                <li>Cabo USB para conectar a placa ao IDE</li>
-                <li>Chassi com rodas e espaço para montagem de eletrônicos</li>
-            </ul>
+    </section>
+    <section class="Título">
+        <h1>
+            <button class="button" data-text="Awesome">
+                <span class="actual-text">&nbsp;Especificações&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Especificações&nbsp;</span>
+            </button>
+        </h1>
+    </section>
+    <section id="Especificações">
+        <div class="card">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+            </svg>
+            <div class="card__content">
+                <p class="card__title">Componentes</p>
+                <p class="card__description">
+                    <ul>
+                        <li>Arduino Uno ou microcontrolador similar</li>
+                        <li>Módulo Bluetooth (HC-05 ou HC-06)</li>
+                        <li>Driver do motor (L298N ou similar)</li>
+                        <li>2 motores DC com caixa de velocidades 48:1</li>
+                        <li>Duas rodas adicionais</li>
+                        <li>Bateria AA</li>
+                        <li>Compartimento de pilhas AA e um conjunto de pilhas alcalinas AA</li>
+                        <li>Cabo USB para conectar a placa ao IDE</li>
+                        <li>Chassi com rodas e espaço para montagem de eletrônicos</li>
+                    </ul>
+                </p>
+            </div>
         </div>
-        <div class="Bloco2">
-            <h1>Processo</h1>
-            <ul>
-                <li>Fabricação do Chassi</li>
-                <li>Inserir os componentes na sua estrutura</li>
-                <li>Estilização</li>
-                <li>Teste</li>
-            </ul>
-        </div>
-    </div>
-    <div class="Bloco3">
-        <h1>Objetivos</h1>
-        <ul>
-            <li>Prática com IoT</li>
-            <li>Domínio com lógica de programação</li>
-            <li>Colaboração em equipe</li>
-            <li>Superação de desafios</li>
-            <li>Estímulo de criatividade</li>
-            <li>Construção de um carrinho com base em arduíno</li>
-        </ul>
-    </div>
-    <div class="Título2">
-        <h1>Galeria</h1>
-    </div>
-    <div id="Galeria">
+        <div class="card">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
+            </svg>
+            <div class="card__content">
+                <p class="card__title">Objetivos</p>
+                <p class="card__description">
+                    <ul>
+                        <li>Fabricação do Chassi</li>
+                        <li>Inserir os componentes na sua estrutura</li>
+                        <li>Estilização</li>
+                        <li>Teste</li>
+                    </ul>
+                </p>
+            </div>
+        </div>    
+    </section>
+    <section class="Título2">
+        <h1>
+            <button class="button" data-text="Awesome">
+                <span class="actual-text">&nbsp;Galeria&nbsp;</span>
+                <span aria-hidden="true" class="hover-text">&nbsp;Galeria&nbsp;</span>
+            </button>
+        </h1>
+    </section>
+    <section id="Galeria">
         <button class="Before" onclick="changeImageBefore()"><</button>
-        <img src="Imagens/Carro.png" class="responsive" id="image" alt="">
+        <img src="Imagens/Carro.png" class="responsive" id="image" alt="Carro">
         <button class="After" onclick="changeImageAfter()">></button>
-    </div>
+    </section>
     <script src="jsPaginaInicial.js"></script>
 </body>
 </html>
