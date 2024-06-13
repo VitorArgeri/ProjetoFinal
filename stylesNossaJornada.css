@@ -77,3 +77,171 @@ body {
     color: rgb(255, 0, 255);
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background: #100721;
+font-family: "Ubuntu Mono", monospace;
+font-weight: 400;
+}
+
+.container {
+width: 100%;
+display: flex;
+justify-content: center;
+height: 500px;
+gap: 10px;
+
+> div {
+    flex: 0 0 500px;
+    height: 1000px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+        background-image: linear-gradient(rgb(245, 175, 245), rgb(235, 138, 235), rgb(239, 75, 239), rgb(174, 39, 174), purple);
+        background-size: cover;
+        animation: changeColors 10s infinite alternate;
+    }
+    &:nth-of-type(2) {
+        background-image: linear-gradient(rgb(245, 175, 245), rgb(235, 138, 235), rgb(239, 75, 239), rgb(174, 39, 174), purple);
+        background-size: cover;
+        animation: changeColors 10s infinite alternate;
+    }
+    &:nth-of-type(3) {
+        background-image: linear-gradient(rgb(245, 175, 245), rgb(235, 138, 235), rgb(239, 75, 239), rgb(174, 39, 174), purple);
+        background-size: cover;
+        animation: changeColors 10s infinite alternate;
+    }
+    &:nth-of-type(4) {
+        background-image: linear-gradient(rgb(245, 175, 245), rgb(235, 138, 235), rgb(239, 75, 239), rgb(174, 39, 174), purple);
+        background-size: cover;
+        animation: changeColors 10s infinite alternate;
+    }
+
+    @keyframes changeColors {
+        0% {
+            background-color: rgb(245, 175, 245);
+        }
+        25% {
+            background-color: rgb(235, 138, 235);
+        }
+        50% {
+            background-color: rgb(239, 75, 239);
+        }
+        75% {
+            background-color: rgb(174, 39, 174);
+        }
+        100% {
+            background-color: purple;
+        }
+    }
+
+.content {  
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    opacity: 0;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    background: rgb(2, 2, 46);
+    background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: translatey(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+    visibility: hidden;
+
+    span {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+      h2 {
+        font-size: 80px;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 900px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+      height: 1000px;
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+#Sprints {
+    margin-top: 100px;
+}
+
+.Título {
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #941b94;
+    --fs-size: 100px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
