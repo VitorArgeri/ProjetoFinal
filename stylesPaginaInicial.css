@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    height: 3450px;
+    height: 3150px;
     background: #2b2b2b;    
     margin: 0;
 }
@@ -56,7 +56,10 @@ body {
     color: inherit;
 }
 
-#Cabeçalho .Caminhos h1, h2, h3, h4 {
+#Cabeçalho .Caminhos h1,
+#Cabeçalho .Caminhos h2,
+#Cabeçalho .Caminhos h3,
+#Cabeçalho .Caminhos h4 {
     padding: 35px;
     color: rgb(171, 57, 171);
     font-family: Judson;
@@ -64,7 +67,16 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transition: color 0.3s ease-in-out; 
 }
+
+#Cabeçalho .Caminhos h1:hover,
+#Cabeçalho .Caminhos h2:hover,
+#Cabeçalho .Caminhos h3:hover,
+#Cabeçalho .Caminhos h4:hover {
+    color: rgb(255, 0, 255);
+}
+
 
 #Carrinho {
     display: flex;
@@ -73,6 +85,7 @@ body {
     background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 100px;
 }
 
 .button {
@@ -85,7 +98,6 @@ body {
   }
   
 
-  /* button styling */
   .button {
     --border-right: 6px;
     --text-stroke-color: rgba(255,255,255,0.6);
@@ -100,7 +112,7 @@ body {
     color: transparent;
     -webkit-text-stroke: 1px var(--text-stroke-color);
   }
-  /* this is the text, when you hover on button */
+
   .hover-text {
     position: absolute;
     box-sizing: border-box;
@@ -113,7 +125,6 @@ body {
     transition: 0.5s;
     -webkit-text-stroke: 1px var(--animation-color);
   }
-  /* hover */
   .button:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color))
@@ -132,30 +143,30 @@ body {
 
 #Carrinho h1 {
     margin-left: 104px;
-    color: white;
     font-family: Judson;
     font-size: 100px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     overflow: hidden;
-    border-right: .15em solid orange;
-    white-space: nowrap;
+    border-right: .1em solid orange;
+    white-space: nowrap; 
     margin: 0 auto;
-    letter-spacing: .15em;
-    animation: 
+    letter-spacing: 2px;
+    color: #d57deb;
+    animation:
       typing 1.2s steps(40, end),
       blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
     from { width: 0 }
-    to { width: calc(37% - 104px); }
+    to { width: calc(30% - 104px); }
 }
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #fff; }
+    50% { border-color: #e3a2df; }
 }
 
 
@@ -203,7 +214,7 @@ body {
     font-size: 100px;
     border: none;
     margin-left: 300px;
-    color: white;
+    color: rgb(239, 214, 239);
 }
 
 .After {
@@ -211,7 +222,12 @@ body {
     font-size: 100px;
     border: none;
     margin-right: 300px;
-    color: white;
+    color: rgb(239, 214, 239);
+}
+
+
+#Especificações {
+  display: flex;
 }
 
 .card {
@@ -306,88 +322,111 @@ body {
     font-family: Judson;
 }
 
-.card2 {
-    position: relative;
-    width: 350px;
-    aspect-ratio: 16/9;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    perspective: 1000px;
-    box-shadow: 0 0 0 5px #ffffff80;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card2 svg {
-    width: 48px;
-    fill: #333;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card2__image {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .card2:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
-  }
-  
-  .card2__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #f2f2f2;
-    transform: rotateX(-90deg);
-    transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  }
-  
-  .card2:hover .card__content {
-    transform: rotateX(0deg);
-  }
-  
-  .card2__title {
-    margin: 0;
-    font-size: 20px;
-    color: #333;
-    font-weight: 700;
-  }
-  
-  .card2:hover svg {
-    scale: 0;
-  }
-  
-  .card2__description {
-    margin: 10px 0 10px;
-    font-size: 12px;
-    color: #777;
-    line-height: 1.4;
-  }
-  
-  .card2__button {
-    padding: 15px;
-    border-radius: 8px;
-    background: #777;
-    border: none;
-    color: white;
-  }
-  
-  .secondary {
-    background: transparent;
-    color: #777;
-    border: 1px solid #777;
-  }
+div[viewBox="0 0 24 24"][xmlns="http://www.w3.org/2000/s"] {
+  font-size: 50px;
+  color: black;
+}
 
-  .card2 ul {
-    font-size: 30px;
-    font-family: Judson;
-  }
+#Especificações2 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.card2 {
+  position: relative;
+  width: 45.15%;
+  height: 536px;
+  aspect-ratio: 16/9;
+  background-color: #f389eb;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin: auto;
+  margin-top: 80px;
+}
+
+.card2 svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card2__image {
+  width: 100%;
+  height: 100%;
+}
+
+.card2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card2__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f389eb;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card2:hover .card2__content {
+  transform: rotateX(0deg);
+}
+
+.card2__title {
+  margin: 0;
+  font-size: 50px;
+  color: #333;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.card2:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 10px;
+  font-size: 1000px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.card2__button {
+  padding: 15px;
+  border-radius: 8px;
+  background: #777;
+  border: none;
+  color: white;
+}
+
+.secondary {
+  background: transparent;
+  color: #1e1c1c;
+  border: 1px solid #777;
+}
+
+.card2 ul {
+  font-size: 30px;
+  font-family: Judson;
+}
+
+.card2 h1 {
+  font-family: Judson;
+  font-weight: normal;
+  font-size: 30px;
+}

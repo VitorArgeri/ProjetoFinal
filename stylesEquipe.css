@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    height: 3692px;
+    height: 3550px;
     background: #2b2b2b;
     margin: 0;
     margin-bottom: 100px;
@@ -57,16 +57,27 @@ body {
     color: inherit;
 }
 
-#Cabeçalho .Caminhos h1, h2, h3, h4 {
-    padding: 35px;  
+#Cabeçalho .Caminhos h1,
+#Cabeçalho .Caminhos h2,
+#Cabeçalho .Caminhos h3,
+#Cabeçalho .Caminhos h4 {
+    padding: 35px;
     color: rgb(171, 57, 171);
     font-family: Judson;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    
+    transition: color 0.3s ease-in-out; 
 }
+
+#Cabeçalho .Caminhos h1:hover,
+#Cabeçalho .Caminhos h2:hover,
+#Cabeçalho .Caminhos h3:hover,
+#Cabeçalho .Caminhos h4:hover {
+    color: rgb(255, 0, 255);
+}
+
 
 .Título {
     width: auto;
@@ -162,7 +173,7 @@ body {
     height: 250px;
     flex-shrink: 0;
     border-radius: 250px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+
     margin-bottom: 25px;
     margin-top: 25px;
     margin-left: 45px;
@@ -211,7 +222,6 @@ body {
     height: 250px;
     flex-shrink: 0;
     border-radius: 250px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     margin-bottom: 25px;
     margin-top: 25px;
     margin-left: 45px;
@@ -260,7 +270,7 @@ body {
     height: 250px;
     flex-shrink: 0;
     border-radius: 250px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+
     margin-bottom: 25px;
     margin-top: 25px;
     margin-left: 45px;
@@ -276,8 +286,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: -275px; /* Manter este valor igual */
-    margin-left: 50%; /* Manter este valor igual */
+    margin-top: -275px; 
+    margin-left: 50%; 
 }
 
 .Pablo ul {
@@ -309,7 +319,6 @@ body {
     height: 250px;
     flex-shrink: 0;
     border-radius: 250px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     margin-bottom: 25px;
     margin-top: 25px;
     margin-left: 45px;
@@ -358,7 +367,6 @@ body {
     height: 250px;
     flex-shrink: 0;
     border-radius: 250px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     margin-bottom: 25px;
     margin-top: 25px;
     margin-left: 45px;
@@ -407,7 +415,6 @@ body {
     height: 250px;
     flex-shrink: 0;
     border-radius: 250px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
     margin-bottom: 25px;
     margin-top: 25px;
     margin-left: 45px;
@@ -423,8 +430,8 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: -275px; /* Manter este valor igual */
-    margin-left: 50%; /* Manter este valor igual */
+    margin-top: -275px; 
+    margin-left: 50%; 
 }
 
 .Argeri ul {
@@ -437,5 +444,49 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
-    margin-left: 20%; /* Manter este valor igual */
+    margin-left: 20%;
 }
+
+
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  .button {
+    --border-right: 0px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #941b94;
+    --fs-size: 100px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5 s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
