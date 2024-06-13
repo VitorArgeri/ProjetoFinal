@@ -149,24 +149,10 @@ body {
     font-weight: 700;
     line-height: normal;
     overflow: hidden;
-    border-right: .1em solid orange;
     white-space: nowrap; 
     margin: 0 auto;
     letter-spacing: 2px;
     color: #d57deb;
-    animation:
-      typing 1.2s steps(40, end),
-      blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: calc(30% - 104px); }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #e3a2df; }
 }
 
 
@@ -430,3 +416,4 @@ div[viewBox="0 0 24 24"][xmlns="http://www.w3.org/2000/s"] {
   font-weight: normal;
   font-size: 30px;
 }
+
